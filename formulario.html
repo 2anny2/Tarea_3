@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+</head>
+<body>
+<h1>FORMULARIO DE REGISTRO</h1>
+<form action="/process" method="post">
+    <div>
+        <label>Nombre:* </label>
+        <input type="text" name="Nombre" placeholder="Ingresa tu Nombre">
+    </div>
+    <div>
+        <label>Apellido:* </label>
+        <input type="text" name="Apellido" placeholder="Ingresa tu Apellido">
+    </div>
+    <div>
+        <label>Email:* </label>
+        <input type="text" name="Email" placeholder="Ingresa tu correo">
+    </div>
+    <div>
+        <label>Contraseña:* </label>
+        <input type="password" name="Contraseña" placeholder="Ingresa tu Contraseña">
+    </div>
+    <div>
+        <label>Confirmar Contraseña:* </label>
+        <input type="password" name="Contraseña" placeholder="Confirma tu Contraseña">
+    </div>
+    <div>
+        <label>Fecha de Nacimiento: </label>
+        <input type="date" name="Fecha">
+    </div>
+    <div>
+        <p>Género o Identidad:</p>
+        <label for="Hombre">Hombre </label>
+        <input type="radio" name="font" value="Hombre" id="Hombre">
+        <label for="Mujer">Mujer </label>
+        <input type="radio" name="font" value="Mujer" id="Mujer">
+        <label for="No Binario">No Binario </label>
+        <input type="radio" name="font" value="No Binario" id="No Binario">
+        <label for="Prefiero no responder">Prefiero no responder </label>
+        <input type="radio" name="font" value="Prefiero no responder" id="Prefiero no responder">
+    </div>
+    <div>
+        <p>Ingrese una breve descripción sobre usted</p>
+        <textarea name="coment" id="" cols="50" rows="5"></textarea>
+    </div>
+    <div>
+        <label>Lenguaje de Preferencia</label>
+        <select name="Lenguaje">
+            <option>HTml</option>
+            <option>JavaScript</option>
+            <option>Java</option>
+            <option>Phyton</option>
+        </select>
+    </div>
+    <div>
+        <input type="checkbox" name="actualizaciones" id="actualizaciones" checked> 
+        <label for="actualizaciones">Sí, me guataría recibir actualizaciones periódicas al correo</label>   
+    </div>
+    <input type="submit" value="Crear Cuenta">
+    <p>* Campos obligatorios</p>
+</form>
+</body>
+</html>
